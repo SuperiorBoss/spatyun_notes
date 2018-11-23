@@ -172,12 +172,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <pre><code>LoadingCache&lt;String/*bind#time for hour*/, List&lt;String&gt;/*&#x7ED1;&#x5B9A;/&#x89E3;&#x7ED1;cluster#ip#vip*/&gt; failedInfos =
-</code></pre><pre><code>CacheBuilder.newBuilder().expireAfterWrite(62, TimeUnit.MINUTES).build(new CacheLoader&lt;String, List&lt;String&gt;&gt;() {
-        @Override
-        public List&lt;String&gt; load(String s) throws Exception {
-            return new ArrayList&lt;String&gt;();
-        }
-    });
+CacheBuilder.newBuilder().expireAfterWrite(62, TimeUnit.MINUTES).build(new CacheLoader&lt;String, List&lt;String&gt;&gt;() {
+    @Override
+    public List&lt;String&gt; load(String s) throws Exception {
+    return new ArrayList&lt;String&gt;();
+    }
+});
 </code></pre><p><strong>expireAfterWrite(long, TimeUnit)</strong>&#xFF1A;&#x7F13;&#x5B58;&#x9879;&#x5728;&#x7ED9;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x6CA1;&#x6709;&#x88AB;&#x5199;&#x8BBF;&#x95EE;&#xFF08;<strong>&#x521B;&#x5EFA;&#x6216;&#x8986;&#x76D6;</strong>&#xFF09;&#xFF0C;&#x5219;&#x56DE;&#x6536;&#x3002;&#x5982;&#x679C;&#x8BA4;&#x4E3A;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x603B;&#x662F;&#x5728;&#x56FA;&#x5B9A;&#x65F6;&#x5019;&#x540E;&#x53D8;&#x5F97;&#x9648;&#x65E7;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x8FD9;&#x79CD;&#x56DE;&#x6536;&#x65B9;&#x5F0F;&#x662F;&#x53EF;&#x53D6;&#x7684;&#x3002;</p>
 <pre><code>  /**
      * &#x901A;&#x8FC7;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x7248;&#x672C;&#x83B7;&#x53D6;VIP
@@ -229,7 +229,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"缓存LoadingCache","level":"1.3","depth":1,"previous":{"title":"云平台介绍","level":"1.2","depth":1,"path":"yun-ping-tai-jie-shao.md","ref":"yun-ping-tai-jie-shao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"huan-cunloadingcache.md","mtime":"2018-11-23T06:25:00.458Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-23T06:26:26.362Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"缓存LoadingCache","level":"1.3","depth":1,"previous":{"title":"云平台介绍","level":"1.2","depth":1,"path":"yun-ping-tai-jie-shao.md","ref":"yun-ping-tai-jie-shao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"huan-cunloadingcache.md","mtime":"2018-11-23T06:27:58.480Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-23T06:29:49.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
